@@ -47,7 +47,7 @@ const router=useRouter();
     }
   }
   return (
-    <div>
+    <div >
       <h2 className="font-bold text-2xl mb-2">Buy More Credits</h2>
       <p>
         Unlock endless possibilities - Buy more credits and transform your room
@@ -72,7 +72,7 @@ const router=useRouter();
         ))}
       </div>
 
-      <div className="mt-20">
+      <div className="mt-20 flex flex-col items-center justify-center">
         {selectedOption?.amount && (
           <PayPalButtons
             style={{ layout: "horizontal" }}
@@ -92,6 +92,9 @@ const router=useRouter();
             }}
           />
         )}
+        <Button className="mt-6 flex flex-col items-center" onClick={() => router.push('/dashboard')}>
+  🔙 Go Back to Dashboard
+</Button>
       </div>
     </div>
   );
