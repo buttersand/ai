@@ -1,9 +1,9 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import React from "react";
-import Header from "./dashboard/_components/Header.jsx";
+import Header from "./dashboard/_components/Header";
 import Image from "next/image";
-import Footer from "./dashboard/_components/Footer.jsx";
+import Footer from "./dashboard/_components/Footer";
 import Link from "next/link";
 export default function Home() {
   return (
